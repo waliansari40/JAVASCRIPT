@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>egg</title>
+</head>
+<body>
+ <li>hey</li>
+</body>
+<script>
+const list = document.querySelector('.output ul');
+list.innerHTML = '';
+let greetings = [ 'Happy Birthday',
+'Happpy Holi to All Of you guys',
+'Holi mubbraka ho',
+'get well soon',
+'Happy aniversary Mom and Dad'
+];
+//main code 
+for(let i=0;i<greetings.length;i++){
+ if( greetings[i].indexOf("Holi") !== -1){
+    let listItem = document.createElement('li')
+  listItem.textContent = greetings[i] ;
+    list.appendChild(listItem)
+ }
+}
+</script>
+</html>

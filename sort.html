@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<h2>Sort strings using for loop in JavaScript</h2>
+<script>
+    function sortString(strArray) {
+var i = 0;
+var j;
+while (i < strArray.length) {
+j = i + 1;
+while (j < strArray.length) {
+if (strArray[j] < strArray[i]) {
+var tempStr = strArray[i];
+strArray[i] = strArray[j];
+strArray[j] = tempStr;
+}
+j++;
+}
+i++;
+}
+}
+var sortArray = ['Karthik', 'Saideep', 'Balu', 'Shweta', 'Divya', 'Bhanu'];
+document.write("Original Array of strings</br>");
+document.write(sortArray);
+document.write("</br>");
+document.write("</br>Array of strings After sorting</br>");
+document.write(sortArray);
+</script>
+</body>
+</html>
